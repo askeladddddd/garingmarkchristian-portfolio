@@ -14,7 +14,7 @@ const projects = [
     year: '2025-2026',
     title: 'MetaDoc — Software Project Proposal Evaluator',
     desc: 'An AI-powered web platform designed to streamline the evaluation of capstone project proposals. It leverages Gemini LLM for automated feedback, role-based access control for students and advisers, and real-time document processing to ensure structural and content compliance.',
-    tags: ['Next.js', 'React', 'Tailwind', 'Gemini AI', 'Google Drive Api', 'Supabase'],
+    tags: ['Flask', 'SQLAlchemy', 'React', 'Tailwind', 'Gemini AI', 'Google Drive Api', 'Supabase'],
     href: 'https://metadoc-eight.vercel.app/',
   },
   {
