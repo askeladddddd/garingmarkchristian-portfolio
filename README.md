@@ -5,7 +5,7 @@ A modern, high-performance web portfolio showcasing my projects, technical capab
 ## 🚀 Live Demo
 *(Insert your live Vercel/Render link here once deployed)*
 
-## 🛠️ Technologies Used
+## 🛠️Tech Stack
 This portfolio is built with a focus on zero-dependency styling and blazing fast performance:
 - **React.js** (v18)
 - **Vite** (Build Tool)
@@ -37,11 +37,6 @@ To run this project locally on your machine:
 4. **Open in browser:**
    Navigate to `http://localhost:5173` to view the application.
 
-## 📸 Screenshots
-*(You can add screenshots of your portfolio here by replacing these placeholders once you take them)*
-
-![Hero Section Placeholder](https://via.placeholder.com/800x400?text=Hero+Section+Screenshot)
-![Projects Section Placeholder](https://via.placeholder.com/800x400?text=Projects+Section+Screenshot)
 
 ## 🤝 Contact
 - **Email:** garing.markchristian@gmail.com
