@@ -2,9 +2,11 @@
 
 A modern, high-performance web portfolio showcasing my projects, technical capabilities, and software development protocol. Designed with a sleek, premium "system utility" aesthetic featuring interactive 3D elements, dynamic theme switching (Dark/Light mode), and a responsive CSS Grid architecture.
 
+## 🚀 Live Demo
+The application is successfully deployed via Vercel. You can view the live project here:  
+**[https://garingmarkchristian-portfolio.vercel.app](https://garingmarkchristian-portfolio.vercel.app)**
 
-
-## 🛠️Tech Stack
+## 🛠️ Tech Stack
 This portfolio is built with a focus on zero-dependency styling and blazing fast performance:
 - **React.js** (v18)
 - **Vite** (Build Tool)
@@ -13,9 +15,9 @@ This portfolio is built with a focus on zero-dependency styling and blazing fast
 - **CSS 3D Transforms** (Interactive profile flip card)
 - **Custom SVGs** (Iconography)
 
-## 💻 Setup Instructions
+## 💻 Local Setup Instructions
 
-To run this project locally on your machine:
+If you wish to run this project locally on your machine:
 
 1. **Clone the repository:**
    ```bash
@@ -34,8 +36,7 @@ To run this project locally on your machine:
    ```
 
 4. **Open in browser:**
-   Navigate to `https://garingmarkchristian-portfolio.vercel.app` to view the application.
-
+   Navigate to `http://localhost:5173` to view the local development build.
 
 ## 🤝 Contact
 - **Email:** garing.markchristian@gmail.com
