@@ -1,0 +1,55 @@
+.intro {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-prime);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s;
+  color: var(--text-pure);
+}
+
+.slideUp {
+  transform: translateY(-100%);
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.text {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  animation: pulse 1s infinite alternate;
+  color: var(--text-pure);
+}
+
+@keyframes pulse {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
+
+.progressBar {
+  width: 200px;
+  height: 2px;
+  background: var(--border-color);
+  overflow: hidden;
+  border-radius: 1px;
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--text-pure);
+  width: 0%;
+  animation: fillBar 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  border-radius: 1px;
+}
+
+@keyframes fillBar {
+  to { width: 100%; }
+}

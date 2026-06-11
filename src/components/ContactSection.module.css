@@ -1,0 +1,147 @@
+.section {
+  padding: 90px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.sectionHeader { margin-bottom: 48px; }
+
+.sectionNum {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-dark);
+  display: block;
+  margin-bottom: 8px;
+  letter-spacing: 0.06em;
+}
+
+.sectionTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-pure);
+  letter-spacing: -0.02em;
+}
+
+.contactWrapper { max-width: 550px; }
+
+/* Floating label field */
+.formField {
+  position: relative;
+  margin-bottom: 36px;
+}
+
+.input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--border-color);
+  padding: 12px 0;
+  color: var(--text-pure);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition);
+  resize: none;
+  display: block;
+}
+
+.input:focus {
+  border-bottom-color: var(--text-pure);
+}
+
+.label {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dark);
+  pointer-events: none;
+  transition: var(--transition);
+  letter-spacing: 0.04em;
+}
+
+/* Lift label on focus or when filled */
+.input:focus ~ .label,
+.labelFilled {
+  top: -14px !important;
+  font-size: 10px !important;
+  color: var(--text-muted) !important;
+}
+
+/* Submit button */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px 32px;
+  border-radius: 6px;
+  background: var(--text-pure);
+  color: var(--bg-prime);
+  border: 1px solid var(--text-pure);
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: 0.04em;
+}
+
+.btn:hover {
+  background: var(--bg-surface-hover);
+  color: var(--text-pure);
+  border-color: var(--border-color-glow);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* Toast Alert */
+.toast {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  background: var(--bg-surface);
+  color: var(--text-pure);
+  padding: 14px 24px;
+  border-radius: 4px;
+  border: 1px solid var(--border-color-glow);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 1000;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  animation: toastSlideUp 0.4s var(--easing) forwards,
+             toastFadeOut 0.4s var(--easing) 3.6s forwards;
+}
+
+.toast svg {
+  color: #10b981;
+}
+
+@keyframes toastSlideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes toastFadeOut {
+  from { opacity: 1; transform: translateY(0); }
+  to { opacity: 0; transform: translateY(20px); }
+}
+
+@media (max-width: 580px) {
+  .toast {
+    bottom: 24px;
+    right: 24px;
+    left: 24px;
+    justify-content: center;
+  }
+}
